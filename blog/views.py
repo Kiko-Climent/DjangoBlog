@@ -49,6 +49,7 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+
         else:
             comment_form = CommentForm()
         
